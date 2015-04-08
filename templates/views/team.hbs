@@ -4,31 +4,27 @@
 
 	{{!-- toss in our team photo --}}
 	<div class="row">
-		<img class="img-rounded img-responsive center-block img-thumbnail" width='90%' src="/images/lab-photo.jpg">
+		<img class="img-rounded img-responsive center-block" width='90%' src="/images/lab-photo.jpg">
 	</div>
+
+	<hr/>
 
 
 	{{!-- load up all of our team members --}}
 	<div class="row">
-		<div class="col-md-8">
-			<h4 class="text-weight-normal">Showing {{members.length}} scientists.</h4>
+		<div class="col-md-12 center-block center-content">
+			{{!-- <h4 class="text-weight-normal center-block">Showing {{members.length}} scientists.</h4> --}}
 			{{# each members}}
-				<tr>
-					<td>{{name.first}}</td>
-					<td>{{name.last}}</td>
-					<td>{{role}}</td>
-					<td><img src="{{cloudinaryUrl image }}" width='50' alt="Image"></td>
-					<td>{{{bio.brief}}}</p>
+				<div class="col-md-3">
+				  <img class="img-circle center-block" src="{{cloudinaryUrl image }}" alt="missing photo!" width="140" height="140">
+				  <h4 class="center-block">{{scientist.first}} {{scientist.last}}</h4>
+				  <h5 class="center-block">{{role}}</h5>
+				  <p class="center-block">{{{bio.brief}}}</p>
+				  <p><a class="btn btn-default center-block" href="#" role="button"><i class="fa fa-indent"></i> Read Bio</a></p>
+				</div>
 			{{/each}}
 		</div>
 </div>
 
 
 
-{{!-- <div class="col-lg-4">
-  <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-  <h2>Heading</h2>
-  <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-</div><!-- /.col-lg-4 -->
- --}}
