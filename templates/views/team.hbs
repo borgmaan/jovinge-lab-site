@@ -1,24 +1,24 @@
 <div class="container">
 </div>
 <div class="container">
-	<div class="row">
-		
 
-		{{!-- toss in our team photo --}}
-		<div class="col-md-9">
-			<img align="right" src="/images/lab-photo.jpg" width=100%>
-		</div>
-	
-		{{!-- load up all of our team members --}}
+	{{!-- toss in our team photo --}}
+	<div class="row">
+		<img class="img-rounded img-responsive center-block" width='75%' src="/images/lab-photo.jpg">
+	</div>
+
+
+	{{!-- load up all of our team members --}}
+	<div class="row">
 		<div class="col-md-8">
 			<h4 class="text-weight-normal">Showing {{members.length}} scientists.</h4>
 			{{# each members}}
-				<p>{{name.first}} {{name.last}}</p>
-				<p>{{role}}</p>
-				<img src="{{cloudinaryUrl image }}" width='50' alt="Image">
-				<p>{{bio.brief}}</p>
+				<tr>
+					<td>{{name.first}}</td>
+					<td>{{name.last}}</td>
+					<td>{{role}}</td>
+					<td><img src="{{cloudinaryUrl image }}" width='50' alt="Image"></td>
+					<td>{{{bio.brief}}}</p>
 			{{/each}}
 		</div>
-
-	</div>
 </div>
