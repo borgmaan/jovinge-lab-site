@@ -25,7 +25,8 @@ exports.initLocals = function(req, res, next) {
 	
 	locals.navLinks = [
 		{ label: 'Home',		key: 'home',		href: '/', 			icon: 'fa-home' },
-		{ label: 'Projects',	key: 'blog',		href: '/blog',		icon: 'fa-area-chart' },
+		{ label: 'Projects',	key: 'blog',		href: '/blog',		icon: 'fa-bar-chart' },
+		{ label: 'Publications',	key: 'publications',		href: '/publications',		icon: 'fa-file-text' },
 		{ label: 'Team',		key: 'team',		href: '/team', 		icon: 'fa-users' },
 		{ label: 'Contact',		key: 'contact',		href: '/contact', 	icon: 'fa-envelope-o' }
 	];

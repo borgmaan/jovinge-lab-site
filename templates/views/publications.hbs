@@ -1,0 +1,20 @@
+{{!-- toss in our team photo --}}
+{{!-- dx.doi.org --}}
+
+<div class="container">
+	<table style="width:100%">
+	{{# each pubs}}
+		<tr>
+			<img class="img-rounded" src="{{cloudinaryUrl featuredFigure }}" alt="missing photo!" height="130">
+			<td>{{shortTitle}}</td>
+			<td>{{journal}}</td>
+			<td>{{doi}}</td>
+			<td>{{authors.abbreviatedList}}</td>
+		</tr>
+	{{/each}}
+	</table>
+</div>
+
+
+
+
