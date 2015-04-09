@@ -1,16 +1,23 @@
+{{!-- toss in our team photo --}}
 <div class="container">
-</div>
-<div class="container">
-
-	{{!-- toss in our team photo --}}
 	<div class="row">
-		<img class="img-rounded img-responsive center-block" width='90%' src="/images/lab-photo.jpg">
+		<figure id="lab-fig">
+			<img id="lab-photo" class="img-rounded img-responsive center-block" src="/images/lab-photo.jpg">
+			<figcaption class="lab-photo-caption">
+				<p style="color: #909090">
+					<em class="lab-photo-caption">Front Row: Christy Milliron, Ellen Ellis, Dawna Dylewski, Jenni Schuitema, Kari Emiley, Brittany Holly, Laura Tarnawski, Laura Winkler</em> <br/>
+					<em class="lab-photo-caption">Second Row: Matt Weiland, Emily Eugster, Paula Davidson, Andrew Borgman, Edgars Grins, Stefan Jovinge, Eric Kort, Jordan Prahl</em> 
+				</p>
+			</figcaption>
+		</figure>	
 	</div>
 
 	<hr/>
+</div>
 
 
-	{{!-- load up all of our team members --}}
+{{!-- load up all of our team members --}}
+<div class="container">
 	<div class="row">
 		<div class="col-md-12 center-block center-content">
 			{{!-- <h4 class="text-weight-normal center-block">Showing {{members.length}} scientists.</h4> --}}
