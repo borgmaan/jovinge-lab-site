@@ -30,7 +30,7 @@ Publication.add({
 	}
 });
 
-Publication.defaultColumns = 'shortTitle, journal, status';
+Publication.defaultColumns = 'shortTitle, journal, status, publishedDate';
 Publication.register();
 
 

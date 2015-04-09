@@ -2,17 +2,25 @@
 {{!-- dx.doi.org --}}
 
 <div class="container">
-	<table style="width:100%">
+	<h2>Selected Publications</h2>
+
 	{{# each pubs}}
-		<tr>
-			<img class="img-rounded" src="{{cloudinaryUrl featuredFigure }}" alt="missing photo!" height="130">
-			<td>{{shortTitle}}</td>
-			<td>{{journal}}</td>
-			<td>{{doi}}</td>
-			<td>{{authors.abbreviatedList}}</td>
-		</tr>
+	<div class="row">
+		<div class="col-md-3">
+			<img class="img-rounded center-block" src="{{cloudinaryUrl featuredFigure }}" alt="missing photo!" height="130">
+		</div>
+		<div class="col-md-3">
+			<h4>{{shortTitle}}</h4>
+		</div>
+		<div class="col-md-3">
+			<h4>{{journal}}</h4>
+		</div>
+		<div class="col-md-3">
+			<h4><a href="dx.doi.org/{{doi}}">{{doi}}</a></h4>
+		</div>
+	</div>
+	<hr/>
 	{{/each}}
-	</table>
 </div>
 
 
