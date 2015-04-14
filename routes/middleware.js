@@ -28,6 +28,7 @@ exports.initLocals = function(req, res, next) {
 		{ label: 'Projects',	key: 'blog',		href: '/blog',		icon: 'fa-bar-chart' },
 		{ label: 'Publications',	key: 'publications',		href: '/publications',		icon: 'fa-file-text' },
 		{ label: 'Team',		key: 'team',		href: '/team', 		icon: 'fa-users' },
+		{ label: 'Photos',		key: 'gallery',		href: '/gallery', 		icon: 'fa-camera-retro' },
 		{ label: 'Contact',		key: 'contact',		href: '/contact', 	icon: 'fa-envelope-o' }
 	];
 	
