@@ -1,14 +1,16 @@
+
 <div class="container">
 	<!-- if galleries -->
+
 	{{#if galleries}}
 		{{#each galleries}}
 		<h2>{{name}}
-			<div class="pull-right text-muted small">{{publishedDate}}</div>
+			<div class="pull-right text-muted small">{{date publishedDate format='MM YYYY'}}</div>
 		</h2>
 		<div class="row gallery-images">
 				{{#if heroImage}}
 				<div class="col-sm-4 col-md-4 gallery-image">
-					<img src="{{cloudinaryUrl heroImage width='680' height='680'}}" class="img-rounded">
+					<img src="{{cloudinaryUrl heroImage width='680' height='680' crop='fill'}}" class="img-rounded">
 				</div>
 				{{/if}}
 				<div class="col-sm-8 col-md-8">
@@ -28,7 +30,11 @@
 	{{/if}}
 </div>
 
+{{!-- some handlebars helpers --}}
 
+
+
+{{!-- console.log(post._.createdAt.format('Do MMMM YYYY')); --}}
 
 
 {{!-- <div class="container"> --}}
