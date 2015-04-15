@@ -9,15 +9,15 @@
 		</h2>
 		<div class="row gallery-images">
 				{{#if heroImage}}
-				<div class="col-sm-4 col-md-4 gallery-image">
-					<img src="{{cloudinaryUrl heroImage width='680' height='400' crop='fill' gravity='north'}}" class="img-rounded">
+				<div class="col-sm-4 col-md-4">
+					<a class="gallery-image" href="{{cloudinaryUrl heroImage width='900' height='600' crop='fit'}}"><img src="{{cloudinaryUrl heroImage width='400' height='400' crop='fill' gravity='north'}}" class="img-rounded"></a>
 				</div>
 				{{/if}}
 				<div class="col-sm-8 col-md-8">
 					<div class="row">
 						{{#each images}}
-						<div class="col-md-3 gallery-image">
-							<img src="{{cloudinaryUrl width='680' height='400' crop='fill'}}" class="img-rounded">
+						<div class="col-md-3">
+							<a class="gallery-image" href="{{cloudinaryUrl width='900' height='600' crop='fit'}}"><img src="{{cloudinaryUrl width='400' height='400' crop='fill'}}" class="img-rounded"></a>
 						</div>
 						{{/each}}
 					</div>
@@ -30,20 +30,4 @@
 	{{/if}}
 </div>
 
-{{!-- script(src='/js/lib/bootstrap/modal.js')
-script(src='/js/lib/bootstrap/carousel.js')
-script(src="/js/lib/fancybox/jquery.fancybox.pack.js")
-script.
-	jQuery(function($) {
-		$('.gallery-images').find('.gallery-image').fancybox({
-			prevEffect: 'none',
-			nextEffect: 'none',
-			closeBtn: false,
-			helpers: {
-				titl: {},
-				buttons: {}
-			}
-		});
-	});
 
- --}}

@@ -112,6 +112,27 @@
 			//- them specifically here, instead of bootstrap-3.2.0.min.js
 		--}}
 		<script src="/js/lib/bootstrap/bootstrap-3.2.0.min.js"></script>
+
+
+		<script src='/js/lib/bootstrap/modal.js'></script>
+		<script src='/js/lib/bootstrap/carousel.js'></script>
+		<script src="/js/lib/fancybox/jquery.fancybox.pack.js"></script>
+
+
+		<script>
+			jQuery(function($) {
+				$('.gallery-images').find('.gallery-image').fancybox({
+					prevEffect: 'none',
+					nextEffect: 'none',
+					closeBtn: true,
+					helpers: {
+						titl: {},
+						buttons: {}
+					}
+				});
+			});
+		</script>
+
 		{{{isAdminEditorJS user}}}
 	</body>
 </html>
