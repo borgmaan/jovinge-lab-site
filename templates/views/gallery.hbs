@@ -10,14 +10,14 @@
 		<div class="row gallery-images">
 				{{#if heroImage}}
 				<div class="col-sm-4 col-md-4 gallery-image">
-					<img src="{{cloudinaryUrl heroImage width='680' height='680' crop='fill'}}" class="img-rounded">
+					<img src="{{cloudinaryUrl heroImage width='680' height='400' crop='fill' gravity='north'}}" class="img-rounded">
 				</div>
 				{{/if}}
 				<div class="col-sm-8 col-md-8">
 					<div class="row">
 						{{#each images}}
 						<div class="col-md-3 gallery-image">
-							<img src="{{cloudinaryUrl}}" class="img-rounded">
+							<img src="{{cloudinaryUrl width='680' height='400' crop='fill'}}" class="img-rounded">
 						</div>
 						{{/each}}
 					</div>
@@ -30,42 +30,20 @@
 	{{/if}}
 </div>
 
-{{!-- some handlebars helpers --}}
+{{!-- script(src='/js/lib/bootstrap/modal.js')
+script(src='/js/lib/bootstrap/carousel.js')
+script(src="/js/lib/fancybox/jquery.fancybox.pack.js")
+script.
+	jQuery(function($) {
+		$('.gallery-images').find('.gallery-image').fancybox({
+			prevEffect: 'none',
+			nextEffect: 'none',
+			closeBtn: false,
+			helpers: {
+				titl: {},
+				buttons: {}
+			}
+		});
+	});
 
-
-
-{{!-- console.log(post._.createdAt.format('Do MMMM YYYY')); --}}
-
-
-{{!-- <div class="container"> --}}
-	{{!-- Showing {{ data.galleries.length}} galleries. --}}
-
-	<!-- if galleries -->
-{{!-- 	{{#if galleries}}
-		{{#each galleries}}
-		<h2>{{name}}
-			<div class="pull-right text-muted small">{{publishedDate}}</div>
-		</h2>
-		<div class="row gallery-images">
-				{{#if heroImage}}
-				<div class="col-sm-4 col-md-4 gallery-image">
-					<img src="{{cloudinaryUrl heroImage }}" class="img-rounded">
-				</div>
-				{{/if}}
-				<div class="col-sm-8 col-md-8">
-					<div class="row">
-						{{#each images}}
-						<div class="col-md-3 gallery-image">
-							<img src="{{cloudinaryUrl}}" class="img-rounded">
-						</div>
-						{{/each}}
-					</div>
-				</div>
-		</div>
-		{{/each}}
-	{{else}}
-	<!-- else -->
-	<h3 class="text-muted">There are no image galleries yet.</h3>
-	{{/if}}
-</div>
  --}}
