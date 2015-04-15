@@ -2,21 +2,20 @@
 	<h2>Selected Publications</h2>
 
 	{{#each pubs}}
+	<hr/>
 	<div class="row">
-		<div class="col-md-3">
-			<img class="img-rounded center-block" src="{{cloudinaryUrl featuredFigure }}" alt="missing photo!" height="130">
+		<div class="col-md-8">
+			<h4>{{fullTitle}}</h4>
+			<h5>{{authors.abbreviatedList}}</h5>
+			<h5><i>{{journal}}</i>: <a href="dx.doi.org/{{doi}}">{{doi}}</a></h5>
 		</div>
-		<div class="col-md-3">
-			<h4>{{shortTitle}}</h4>
-		</div>
-		<div class="col-md-3">
-			<h4>{{journal}}</h4>
-		</div>
-		<div class="col-md-3">
-			<h4><a href="dx.doi.org/{{doi}}">{{doi}}</a></h4>
+
+		<div class="col-md-4">
+			<a class="gallery-image" href="{{cloudinaryUrl featuredFigure width='900' height='600' crop='fit'}}">
+				<img class="img-rounded center-block" src="{{cloudinaryUrl featuredFigure height="130"}}" alt="missing photo!">
+			</a>
 		</div>
 	</div>
-	<hr/>
 	{{/each}}
 </div>
 
