@@ -78,8 +78,8 @@ keystone.set('cloudinary secure', true);
 keystone.set('wysiwyg menubar', true);
 // keystone.set('wysiwyg images', true)
 keystone.set('wysiwyg cloudinary images', true);
-keystone.set('wysiwyg additional buttons', 'searchreplace, forecolor, backcolor, emoticons, media, preview, print');
-keystone.set('wysiwyg additional plugins', 'example, table, advlist, anchor, autolink, autosave, bbcode, charmap, contextmenu, directionality, emoticons, fullpage, hr, media, pagebreak, paste, preview, print, searchreplace, textcolor, visualblocks, visualchars, wordcount');
+// keystone.set('wysiwyg additional buttons', 'searchreplace, forecolor, backcolor, emoticons, media, preview, print');
+// keystone.set('wysiwyg additional plugins', 'example, table, advlist, anchor, autolink, autosave, bbcode, charmap, contextmenu, directionality, emoticons, fullpage, hr, media, pagebreak, paste, preview, print, searchreplace, textcolor, visualblocks, visualchars, wordcount');
 
 
 
