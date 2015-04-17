@@ -3,6 +3,7 @@
 # pushes updates and content to our production server
 
 scp public/images/* pub:/lab-site/public/images/
+scp public/styles/site/* pub:/lab-site/public/styles/site/
 scp -r templates/* pub:/lab-site/templates/
 scp -r models/* pub:/lab-site/models/
 scp -r routes/* pub:/lab-site/routes/
