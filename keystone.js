@@ -64,7 +64,9 @@ keystone.set('routes', require('./routes'));
 keystone.set('nav', {
 	'posts': ['posts', 'post-categories'],
 	'enquiries': 'enquiries',
-	'enquiries': 'enquiries',
+	'galleries': 'galleries',
+	'members': 'members',
+	'publications': 'publications',
 	'users': 'users'
 });
 
