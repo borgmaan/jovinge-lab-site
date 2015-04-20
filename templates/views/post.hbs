@@ -13,7 +13,7 @@
 				</header>
 				<div class="post">
 					{{{data.post.content.extended}}}
-					<img src="{{cloudinaryUrl data.post.image }}" width='700' alt="Image">
+					<img src="{{cloudinaryUrl data.post.image secure='true' width='700' crop='fill'}}" alt="Image">
 				</div>
 			</article>
 		</div>
