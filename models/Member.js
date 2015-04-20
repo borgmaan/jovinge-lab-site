@@ -8,7 +8,8 @@ var keystone = require('keystone'),
 
 var Member = new keystone.List('Member', {
 	map: { name: 'scientist' },
-	autokey: { path: 'key', from: 'name'}
+	autokey: { path: 'key', from: 'name'},
+	defaultSort: 'scientist'
 });
 
 Member.add({
