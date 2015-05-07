@@ -10,6 +10,11 @@
 	color: @gray-light;
 }
 
+#bios {
+    width: 99%;
+    margin: 0 auto;
+}
+
 .gallery-image img{
     display: block;
     max-width: 100%;
@@ -54,3 +59,29 @@ figcaption {
     text-align: center;
 }
 
+// Mixin
+.clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Usage
+.member {
+  width: 220px;
+  text-align: center;
+}
+
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -moz-binding: url(<q>assets/xml/ellipsis.xml#ellipsis</q>);
+}

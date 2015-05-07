@@ -19,18 +19,24 @@
 {{!-- load up all of our team members --}}
 <div class="container">
 	<div class="row">
-		<div class="col-md-12 center-block center-content">
-			{{!-- <h4 class="text-weight-normal center-block">Showing {{members.length}} scientists.</h4> --}}
-			{{#each members}}
-				<div class="col-md-3">
-				  <img class="img-circle center-block" src="{{cloudinaryUrl image width="140" height="140" crop='fill' gravity='face' secure='true'}}" alt="missing photo!">
-				  <h4 class="center-block">{{scientist.first}} {{scientist.last}}</h4>
-				  <h5 class="center-block">{{role}}</h5>
-				  <p class="gcenter-block">{{{bio.brief}}}</p>
-				  {{!-- <a class="btn btn-default center-block" href="#" role="button"><i class="fa fa-indent"></i> Read Bio</a> --}}
-				</div>
-			{{/each}}
-		</div>
+			<div id="bios" class="container">
+				{{#each members}}
+					<div class="member col-sm-3 ">
+					  <img class="img-circle center-block" src="{{cloudinaryUrl image width="140" height="140" crop='fill' gravity='face' secure='true'}}" alt="missing photo!">
+					  <h4 class="center-block">{{scientist.first}} {{scientist.last}}</h4>
+					  <h5 class="center-block">{{role}}</h5>
+					  <p class="center-block">{{{bio.brief}}}</p>
+
+{{!-- 				<img class="img-circle" src="{{cloudinaryUrl image width="140" height="140" crop='fill' gravity='face' secure='true'}}" alt="missing photo!">
+					  <h4>{{scientist.first}} {{scientist.last}}</h4>
+					  <h5>{{role}}</h5>
+					  <p class="ellipsis">{{{bio.brief}}}</p>
+ --}}
+
+					  {{!-- <a class="btn btn-default center-block" href="#" role="button"><i class="fa fa-indent"></i> Read Bio</a> --}}
+					</div>
+				{{/each}}
+			</div>
 </div>
 
 
